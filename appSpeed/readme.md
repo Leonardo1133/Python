@@ -32,7 +32,6 @@ Y obtenemos por terminal los datos de la siguiente manera:
 
 ![speedNet](https://user-images.githubusercontent.com/42939877/175649326-eb6b7a0b-bc46-4730-a3b9-9ad27e70f2ed.png)
 
-
-
-
+### Next Step: Run with Docker
+El próximo nivel para esta aplicación es implementar la ejecución del monitoreo de la conexión a internet con un contenedor de docker. Esto permitirá aislar la aplicación de nuestro sistema, y dejarla ejecutando durante todo el día. Esta implementacion estara disponible en el [repo de Docker](https://github.com/Leonardo1133/Docker).
 
