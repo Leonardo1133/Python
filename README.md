@@ -3,3 +3,7 @@
 # Python
 En este repo, documentaremos aplicaciones en python, tanto de machine learning como de otros temas.
 
+### Aplicaciones
+- **appSpeed**: Una app para medir distintas caracteristicas de nuestra conexion a internet. 
+- **serverHTTP**: 
+- **btcAlert**:
