@@ -39,6 +39,6 @@ for sample in range(0, 4):
 
     # agregar datos al dataframe
     df = df.append(speed_data, ignore_index=True)
-    df.to_csv('data.csv')
+    df.to_csv('data/data.csv')
 
 print(df)
