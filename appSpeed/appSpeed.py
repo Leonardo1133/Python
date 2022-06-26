@@ -35,10 +35,12 @@ for sample in range(0, 4):
     print('ping: ', ping)
 
     # Creamos un diccionario con los datos para agregarlos al pandas dataframe 
-    speed_data = {'datetime':t ,'download_speed':d_st, 'upload_speed':u_st, 'ping':ping}
+    speed_data = [{'datetime':t ,'download_speed':d_st, 'upload_speed':u_st, 'ping':ping}]
 
-    # agregar datos al dataframe
-    df = df.append(speed_data, ignore_index=True)
+    # pandas.DataFrame.from_records --> Crea un objeto DataFrame a partir de un ndarray estructurado,una secuencia de tuplas o dicts,o un DataFrame.
+    df = pd.concat([df, pd.DataFrame.from_records( speed_data )], ignore_index=True)
+    
+    # Guardamos el csv
     df.to_csv('data/data.csv')
 
 print(df)
